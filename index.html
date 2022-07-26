@@ -13,10 +13,11 @@
     <header>
         <div>
             <nav>
-                <ul id="menu">
-                    <li id="home"><a href="index.html">Inicio</a></li>
-                    <li id="historia"><a href="historia.html">Historia</a></li>
-                    <li id="juguemos"><a href="juguemos.html">Juguemos</a></li>
+                <a href="index.html">Inicio</a>
+
+                <ul class="menu">   
+                    <li class="item-menu"><a class="item-link" href="historia.html">Historia</a></li>
+                    <li class="item-menu"><a class="item-link" href="juguemos.html">Juguemos</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,34 +29,32 @@
         </div>
     </header>
 
-    <main id="mainContainer">
-        <section class="containerSection">
-            <div class="containerh2">
-                <h2>CONTENIDO</h2>
-            </div>
-        </section>
+    <h2>CONTENIDO</h2>
 
-        <section id="cardsHyJ">
-            <div class="containerHistoria">
-                <img class="img1H" src="./assets/imagenes/img1.jpg" alt="imagen=producto">
+    <main class="cont-padre">
+            
+            <!-- cards categorias -->
+
+            <div class="card">
+                <img class="img1" src="./assets/imagenes/img1.jpg" alt="imagen=producto">
                 <p class="pImg1">Conozcamos Un poco sobre la historia de la programacion</p>
-                <button class="btnVerdeH"><a class="aHistoria" href="historia">Ir a historia</a></button>
+                <a class="btnVerde" href="./historia.html"> Ir a historia </a>
             </div> 
 
-            <div class="containerJugar">
-                <img class="img2J" src="./assets/imagenes/img2.jpg" alt="imagen=producto2">
-                <p class="pImg2">Juguemos un poco sobre la computacion</p>
-                <button class="btnVerdeJ"><a class="aJuguemos" href="juguemos.html">Ir a juego</a></button> 
+            <div class="card">
+                <img class="img1" src="./assets/imagenes/img2.jpg" alt="imagen=producto2">
+                <p class="pImg1">Juguemos un poco sobre la computacion</p>
+                <a class="btnVerde" href="./juguemos.html">Ir a juego </a> 
             </div>
-        </section>
     </main>
     
-    <footer class="ftr">
+    <footer>
         <div class="divTitulo">
-            <p class="textTitulo"> <b>PROGRAMACION  <br> E  <br> HISTORIA </b> </p>
-        </div>  
-        <div class="divCredits">
-            <p class="textCréditos">Sitio con fines educativos - Creado por Alan Joel Calveyra</p>
+            <p class="text-Blanco"> <b><br/>PROGRAMACION  <br/> E  <br/> HISTORIA</b></p>
+        </div>
+
+        <div class="text-Footer">
+            <p class="text-Blanco">Sitio con fines educativos - Creado por Alan Joel Calveyra</p>
         </div>
     </footer>
 </body>

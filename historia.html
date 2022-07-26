@@ -12,10 +12,10 @@
 <body>
     <header>
         <nav>
-            <ul id="menu">
-                <li id="home"><a href="index.html">Inicio</a></li>
-                <li id="historia"><a href="historia.html">Historia</a></li>
-                <li id="juguemos"><a href="juguemos.html"></a>Juguemos</li>
+            <a href="index.html">Inicio</a>
+            <ul class="menu">
+                <li class="item-menu"><a class="item-link" href="historia.html">Historia</a></li>
+                <li class="item-menu"><a class="item-link" href="juguemos.html">Juguemos</a></li>
             </ul>
         </nav>
 
@@ -59,27 +59,33 @@
                     </p>
                 </div>
             </div>
-
-            <div>
-                <h2>Un breve video para complementar lo visto</h2>
-                    <video src="./video-explicacion.mp4" controls>
-                        <source>
-                        <source src="./video-explicacion.ogv" controls>
-                    </video>
-            </div>    
         </section>
+        
+        <article class="contenedorVideo">
+            <h2>Un breve video para complementar lo visto</h2>
+            <section class="container">
+                <video width="100%" poster="./assets/imagenes/img-video.jpg">
+                    <source src="./video-explicacion.mp4"/>
+                    <source src="./assets/video/historia-Comp.ogv"/>
+                </video> 
+                <div class="barra">
+                    <div class="botonera">
+                        <button id="play" class="botonesVideo">  <img src="./assets/imagenes/play.svg" alt="btnPlay"></button>
+                        <button id="pause" class="botonesVideo"><img src="./assets/imagenes/pausa.svg" alt="btnpause"></button>
+                    </div>
+                    <div id="showTime"> Duracion video : 281.10</div>
+                </div>
+            </section>
+        </article>
     </main>
 
     <footer>
-        <section>
-            <div>
-                <p>PROGRAMACION E HISTORIA</p>
-            </div>
-        
-            <div>
-                <p>Sitio con fines educativos - Creado por Alan Joel Calveyra</p>
-            </div>
-        </section>    
+        <div class="divTitulo">
+            <p class="text-Blanco"><b><br/>PROGRAMACION <br/>E <br/>HISTORIA </b></p>
+        </div>
+        <div class="text-Footer">
+            <p class="text-Blanco">  Sitio con fines educativos - Creado por Alan Joel Calveyra</p>
+        </div>    
     </footer>
 </body>
 </html>
