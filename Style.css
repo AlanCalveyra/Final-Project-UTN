@@ -6,6 +6,7 @@ body{
 }
 
 nav{
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -150,8 +151,11 @@ footer{
 }
 
 .divTitulo{
-    font-size: 14px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 60px;
 }
 
 .text-Blanco{
@@ -160,9 +164,6 @@ footer{
     color: #F0F5E4;
 }
 
-.text-Footer{
-    text-align: center;
-}
 .imgFondo{
     width: 1912px;
     height: 450px;
@@ -280,7 +281,6 @@ footer{
 }
 .barra{
     background-color: #1d1d1d;
-
     border-radius: 10px;
     padding: 2px 5px;
     display: flex;
@@ -293,7 +293,8 @@ footer{
 .container{
     padding: 5px;
     background-color: black;
-    width: 70%;
+    width: 150%;
+    
 }
 
 #play,#pause{
