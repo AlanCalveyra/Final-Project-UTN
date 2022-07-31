@@ -37,7 +37,7 @@ function temaNoche() {
     body.classList.add("body-night")
 }*/
 
-
+/*------------------------------JS ALAN CALVEYRA-------------------------------*/
 let video = document.querySelector('video');
 let play = document.getElementById('play');
 let pause = document.getElementById('pause');
@@ -48,4 +48,15 @@ function reproducir() {
 
 function pausar() {
     video.pause()
-} 
+}
+
+let moverImagenes = ()=>{
+    let imagen1 = document.getElementById('img1');
+    let imagen2 = document.getElementById('img2');
+    let imagen3 = document.getElementById('img3');
+    let destino = document.getElementById('boxImg');
+
+    
+}
+/* */
+/*------------------------------JS ALAN CALVEYRA-------------------------------*/
