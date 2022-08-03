@@ -1,6 +1,6 @@
 *{
     margin:0;
-    padding:0;
+   /*padding:0;*/
 }
 
 body{
@@ -78,6 +78,16 @@ h2{
     font-size: 40px;
     text-align: center;
     color: #F0F5E4;
+    padding-top: 90px;
+
+}
+
+.h2Historia{
+    padding-bottom: 50px;
+}
+
+.h2Juego{
+    padding-bottom: 50px;
 }
 
 .cont-padre{
@@ -220,6 +230,10 @@ footer{
     border: 2px solid black;
     background-color: grey;
     text-align: center;
+}
+
+#p1, #p2, #p3{
+    padding-top: 10px;
 }
 
 #boxImg{
