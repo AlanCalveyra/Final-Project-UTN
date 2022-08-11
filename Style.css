@@ -1,6 +1,6 @@
 *{
     margin:0;
-   /*padding:0;*/
+    padding:0;
 }
 
 body{
@@ -82,11 +82,7 @@ h2{
 
 }
 
-.h2Historia{
-    padding-bottom: 50px;
-}
-
-.h2Juego{
+.h2Historia, .h2Juego{
     padding-bottom: 50px;
 }
 
@@ -101,8 +97,6 @@ h2{
 main{
     padding: 100px 20px;
 }
-
-
 
 .img1{
     width: 100%;
@@ -135,25 +129,11 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+
 .containerSection{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#cardsHyJ{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 150px;
-}
-
-.aHistoria{
-    color: #F0F5E4;
-}
-
-.aJuguemos{
-    color: #F0F5E4;
 }
 
 footer{
@@ -342,12 +322,13 @@ video{
 .rect1, .poly1{
     animation: part_1 ease-in 5s  ;
     animation-iteration-count:1 ;
-    }
+}
     
 .rect2, .poly2 {
 animation: part_2 ease-in 5s;
 animation-iteration-count:1;
 }
+
 @keyframes part_1{
     0% {
     transform: translate(0,-10px);
@@ -386,3 +367,31 @@ animation-iteration-count:1;
         transform:translate(0,0);
         opacity:1;
 }}
+
+@media screen and ( min-width: 768px) and (max-width: 1023px){
+   
+    .menu{
+    display: none;
+}
+
+    header{
+    font-size: 20px;
+    padding: 0px, 100px;
+}
+
+    h2{
+    font-size: 32px;
+}
+
+    .cont-padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 0px; 
+    margin-top: 50px;
+}
+
+}
+    

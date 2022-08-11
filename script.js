@@ -15,61 +15,61 @@ function pausar() {
 
 /*------------------------JUEGO JS------------------------------*/
 
-let imagen1 = document.querySelector('#img1');
+let imagen1 = document.querySelector('#img3');
 let imagen2 = document.getElementById('img2');
-let imagen3 = document.getElementById('img3');
+let imagen3 = document.getElementById('img1');
 let destino1 = document.getElementById('container1');
 let destino2 = document.getElementById('container2');
 let destino3 = document.getElementById('container3');
 
-imagen1.addEventListener("dragstart",(event)=>{
+imagen1.addEventListener("dragstart",(e)=>{
     
-    event.dataTransfer.setData('text',event.target.id);
+    e.dataTransfer.setData('text',e.target.id);
 });
 
-destino1.addEventListener("dragover",(event)=>{
+destino1.addEventListener("dragover",(e)=>{
         
-        event.preventDefault(); 
+        e.preventDefault(); 
 });
 
-destino1.addEventListener("drop",(event)=>{
-    let imgSrc = event.dataTransfer.getData('text');
+destino1.addEventListener("drop",(e)=>{
+    let imgSrc = e.dataTransfer.getData('text');
 
-    event.target.appendChild(document.getElementById(imgSrc));
+    e.target.appendChild(document.getElementById(imgSrc));
     document.querySelector('#p1').classList.add('none');
 });
 
-imagen2.addEventListener("dragstart",(event)=>{
+imagen2.addEventListener("dragstart",(e)=>{
     
-    event.dataTransfer.setData('text',event.target.id);
+    e.dataTransfer.setData('text',e.target.id);
 });
 
-destino2.addEventListener("dragover",(event)=>{
+destino2.addEventListener("dragover",(e)=>{
         
-        event.preventDefault()
+        e.preventDefault()
 });
 
-destino2.addEventListener("drop",(event)=>{
-    let imgSrc = event.dataTransfer.getData('text');
+destino2.addEventListener("drop",(e)=>{
+    let imgSrc = e.dataTransfer.getData('text');
 
-    event.target.appendChild(document.getElementById(imgSrc));
+    e.target.appendChild(document.getElementById(imgSrc));
     document.querySelector('#p2').classList.add('none');
 });
 
-imagen3.addEventListener("dragstart",(event)=>{
+imagen3.addEventListener("dragstart",(e)=>{
     
-    event.dataTransfer.setData('text',event.target.id);
+    e.dataTransfer.setData('text',e.target.id);
 });
 
-destino3.addEventListener("dragover",(event)=>{
+destino3.addEventListener("dragover",(e)=>{
         
-        event.preventDefault()
+        e.preventDefault()
 });
 
-destino3.addEventListener("drop",(event)=>{
-    let imgSrc = event.dataTransfer.getData('text');
+destino3.addEventListener("drop",(e)=>{
+    let imgSrc = e.dataTransfer.getData('text');
 
-    event.target.appendChild(document.getElementById(imgSrc));
+    e.target.appendChild(document.getElementById(imgSrc));
     document.querySelector('#p3').classList.add('none');
 });
 
